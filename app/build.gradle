@@ -27,7 +27,7 @@ eclipse {
 }
 
 war {
-    archiveBaseName = 'employee'
+    archiveBaseName = 'web'
 }
 
 dependencies {
