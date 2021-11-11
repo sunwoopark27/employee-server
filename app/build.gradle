@@ -8,10 +8,10 @@
 
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
-    id 'application'
 
     id 'java'
-    id 'eclipse'
+    id 'eclipse-wtp'
+    id 'war'
 }
 
 repositories {
@@ -24,6 +24,10 @@ eclipse {
         // eclipse .project 파일에 등록할 이름
         name = "employee-server"
     }
+}
+
+war {
+    archiveBaseName = 'employee'
 }
 
 dependencies {
@@ -61,9 +65,4 @@ dependencies {
 
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:29.0-jre'
-}
-
-application {
-    // Define the main class for the application.
-    mainClass = 'com.sunwoo.pms.App'
 }
