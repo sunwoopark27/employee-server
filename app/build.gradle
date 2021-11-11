@@ -9,11 +9,21 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
+
+    id 'java'
+    id 'eclipse'
 }
 
 repositories {
     // Use JCenter for resolving dependencies.
     jcenter()
+}
+
+eclipse {
+    project {
+        // eclipse .project 파일에 등록할 이름
+        name = "employee-server"
+    }
 }
 
 dependencies {
