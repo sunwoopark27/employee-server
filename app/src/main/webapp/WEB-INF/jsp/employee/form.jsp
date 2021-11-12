@@ -14,7 +14,7 @@
 번호: <input type="number" name="no"><br>
 이름: <input type="text" name="name"><br>
 이메일: <input type="email" name="email"><br>
-암호: <input type="text" name="position"><br>
+직급: <input type="text" name="position"><br>
 전화번호: <input type="tel" name="tel"><br>
 <input type="submit" value="등록">
 </form>

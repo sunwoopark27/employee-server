@@ -3,8 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
-  version="4.0"
-  metadata-complete="false"> 
+  version="4.0">
   
   <display-name>employee</display-name>
   
@@ -34,12 +33,9 @@
     </init-param>
     <init-param> <!-- 빈 컨테이너의 설정 정보를 다루는 클래스를 지정한다. -->
       <param-name>contextConfigLocation</param-name>
-      <param-value>com.pms.petopia.config.AppConfig</param-value>
+      <param-value>com.sunwoo.pms.config.AppConfig</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
-    <multipart-config>
-      <max-file-size>10000000</max-file-size>
-    </multipart-config>
   </servlet>
   
   <servlet-mapping>

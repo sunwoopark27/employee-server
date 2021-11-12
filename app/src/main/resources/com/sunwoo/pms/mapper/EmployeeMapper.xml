@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.eomcs.pms.dao.EmployeeDao">
+<mapper namespace="com.sunwoo.pms.dao.EmployeeDao">
   
   <resultMap id="employeeMap" type="employee">
     <id column="no" property="no"/>

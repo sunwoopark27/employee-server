@@ -1,7 +1,6 @@
 package com.sunwoo.pms.web;
 
 import java.util.List;
-import javax.servlet.http.Part;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,7 +24,7 @@ public class EmployeeController {
   }
 
   @PostMapping("add")
-  public String add(Employee e, Part photoFile) throws Exception {
+  public String add(Employee e) throws Exception {
 
     employeeService.add(e);
     return "redirect:list";

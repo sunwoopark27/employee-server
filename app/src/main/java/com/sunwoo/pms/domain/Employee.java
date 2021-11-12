@@ -8,14 +8,14 @@ public class Employee {
   private String position;
   private String tel;
 
-  public Employee(String csv) {
-    String[] fields = csv.split(",");
-    this.setNo(Integer.parseInt(fields[0]));
-    this.setName(fields[1]);
-    this.setEmail(fields[2]);
-    this.setPosition(fields[3]);
-    this.setTel(fields[5]);
-  }
+  //  public Employee(String csv) {
+  //    String[] fields = csv.split(",");
+  //    this.setNo(Integer.parseInt(fields[0]));
+  //    this.setName(fields[1]);
+  //    this.setEmail(fields[2]);
+  //    this.setPosition(fields[3]);
+  //    this.setTel(fields[5]);
+  //  }
 
 
 
